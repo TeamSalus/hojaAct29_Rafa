@@ -19,9 +19,7 @@ async function cargarPaises(){
     var arrayPaises = [];
     console.log(resultadoJson.Countries)
     for(var i=0; i<resultadoJson.Countries.length; i++){
-        
        arrayPaises.push(resultadoJson.Countries[i].Country);
-       
     }
     var template = Handlebars.templates.cargarPaises;
     document.getElementById("pais").innerHTML = template({
@@ -30,4 +28,4 @@ async function cargarPaises(){
     
 }
 
-document.load = cargarPaises();
+document.load = cargarPaises(); 
