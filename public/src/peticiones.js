@@ -17,12 +17,12 @@ async function cargarPaises(){
     let resultado = await fetch("https://api.covid19api.com/summary")
     let resultadoJson = await resultado.json();
     var arrayPaises = [];
+    console.log(resultadoJson.Countries)
     for(var i=0; i<resultadoJson.Countries.length; i++){
         
        arrayPaises.push(resultadoJson.Countries[i].Country);
        
     }
-    console.log(arrayPaises)
     var template = Handlebars.templates.cargarPaises;
     document.getElementById("pais").innerHTML = template({
         paises: arrayPaises
