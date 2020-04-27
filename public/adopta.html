@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js">
+    </script>
+    <script src="./src/peticiones.js" async></script>
+    <script src="./src/datosPeticiones.precompiled.js"></script>
+    <script src="./src/cargarPaises.precompiled.js"></script> 
+    <title>COVID-19 PAISES</title>
+</head>
+
+<body>
+    <h1>COVID-19. Escoge el país que deseas ver</h1>
+    <section id="contInitial">
+        <label for="pais">PAÍS: </label>
+        <select name="pais" id="pais">
+            
+        </select>
+    </section>
+    <br>
+    <section id="datosCOVID"></section>
+</body>
+
+</html>
